@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Car, Calendar, Settings, ChevronRight, X, Gauge, AlertCircle, CheckCircle2, Droplet, ShieldCheck, Wrench, ChevronLeft, Pencil, Info } from 'lucide-react';
+import { Plus, Car, Calendar, Settings, ChevronRight, X, Gauge, AlertCircle, CheckCircle2, Droplet, ShieldCheck, Wrench, ChevronLeft, Pencil, Info, FileText } from 'lucide-react';
 import { serviceData } from './serviceData';
 import './index.css';
 
@@ -141,6 +141,18 @@ function App() {
           </button>
         )}
         <h1 style={{ fontSize: '1.2rem', fontWeight: 600, color: '#fff', letterSpacing: '0.5px' }}>{title}</h1>
+      </div>
+      <div>
+        <a 
+          href="/harrier-ev-onwers-manual-maintanence.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          title="Owner's Manual"
+          className="btn-icon"
+          style={{ width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+        >
+          <FileText size={20} color="var(--accent-primary)" />
+        </a>
       </div>
     </div>
   );
